@@ -1,0 +1,326 @@
+
+ 
+
+*{
+    margin: 0;
+    font-family: Arial;
+    /* border: border-box; */
+}
+.slide ul{
+    list-style-type: none;
+    background-color:white;
+    padding: 0%;
+    margin: 0px;
+    overflow: hidden;
+}
+.slide a{
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+slide a:hover{
+    background-color: black
+}
+.slide li{
+    float: left;
+}
+.ul li{
+    list-style: none;
+}
+.ul li a{
+    color: black;
+    font-weight: 500;
+    padding:5px 0;
+    display: block;
+    transition: 0.2s ease-out; 
+    margin-bottom: 2rem;
+}
+input{
+    display: None;
+    visibility: hidden;
+}
+.toggle{
+     position: absolute;  
+    margin-right: 100px;
+    margin-bottom: 0.2rem;
+    height: 30px;
+    width: 30px;
+    top: 20px;
+    left: 15px;
+    z-index: 1;
+    cursor: pointer;
+    border-radius: 2px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+}
+.toggle .common{
+    position: absolute;
+    height: 2px;
+    width: 20px;
+    background-color: red;
+    border-radius: 50px;
+    transition: 0.3s ease;
+}
+.toggle .top_line{
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .middle_line{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.toggle .bottom_line{
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+input:checked ~.toggle .top_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+input:checked ~.toggle .bottom_line{
+    left: 2px;
+    top: 14px;
+    width: 25px;
+    transform: rotate(-45deg);
+}
+
+input:checked ~.toggle .middle_line{
+    opacity: 0;
+    transform: translate(20px);
+}
+input:checked ~.slide{
+    transform: translate(0);
+}
+slide > h1{
+    height: 0.1rem;
+    width: 0.1rem;
+}
+.logo{
+    background-size: cover;
+    width: 0.1rem;
+}
+
+
+header.navbar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column      ;
+}
+
+nav .nav-container .nav-content{
+    background: linear-gradient(0deg, rgb(247, 247, 247) 23.8%, rgb(252, 221, 221) 92%);
+    /* background: linear-gradient(0deg, rgb(252, 221, 221) 92%), rgb(247, 247, 247) 23.8%; */
+}
+
+nav .nav-container .nav-content ul{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    justify-content: space-evenly;
+}
+
+nav .nav-container .nav-content ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+nav .nav-container .nav-content ul li{
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+    font-family: 'Instrument Serif', serif;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+
+
+.border{
+    border: 2px solid transparent;
+}
+
+.location{
+    /* margin-top: 0.9rem; */
+        color: black;
+    font-weight: 50px;
+    display: inline;
+    border-radius: 50px;
+    text-align: center;
+    
+}
+
+.location > select{
+    
+   background-color:rgb(196, 194, 194);
+   padding: 3px;
+   
+    
+}
+
+
+/* .hero-section{
+    background-image: url("/image/homesalon.webp");
+    height: 600px;
+    background-size: cover;
+    margin-top: 10px;
+} */
+
+.welcome > p{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: goldenrod;
+    font-size: 2em;
+    margin-top: 15px;
+}
+
+.home{
+    text-align: center;
+
+}
+
+/* .shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    
+
+} */
+
+.shop-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px 20px;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.shop-section .box p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.box{
+    /* border: 2px solid black; */
+    /* border-radius: 50px; */
+    /* height: 100px; */
+    /* width: 20%; */
+    /* justify-content: space-evenly; */
+    text-align: center;
+
+
+
+}
+
+.box a img{
+    width: 8rem;
+    border-radius: 8rem;
+    border-radius: 4rem;
+}
+.box > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.portfolio > p{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: goldenrod;
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+
+.portfolio1 > h1{
+    text-align: center;
+    color: black;
+}
+
+.special > p{
+    text-align: center;
+}
+
+.makeup{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.bridal > h3{
+    color: rgb(190, 161, 89);
+    margin-left: 5rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.Birthday > h3{
+    color: rgb(255, 151, 167);
+    text-align: center;
+}
+
+.Party > h3{
+    color: rgb(235, 65, 93);
+    margin-right: 100px;
+}
+
+.class > h2{
+    color: rgb(108, 107, 107);
+}
+
+.home > h4{
+    font-family: 'Great Vibes', cursive;
+    text-align: center;
+    color: goldenrod;
+    font-size: 1.5em;
+    margin-top: 100px;
+}
+
+.service > h2{
+    text-align: center;
+    color: black;
+}
+
+.visit{
+    text-align: center;
+}
+
+.image{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.image2 img{
+    height: 25rem;
+}
+.image1 {
+    /* display: grid;
+    grid-template-columns: 1fr 1fr ; */
+    justify-content: center;
+    margin-top: 5rem;
+    object-fit: fill;
+}
+
+.select > h4{
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+    
+}
+
+
+.cursoure{
+    cursor: pointer;
+}
+
+
